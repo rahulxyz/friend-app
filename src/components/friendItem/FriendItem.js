@@ -10,8 +10,8 @@ const FriendItem = (props) => {
                 <p>{description}</p>
             </div>
             <div className="friend-item-button">
-                <button className={starClass} onClick={() => toggleFavourite(id, !isFavourite)}>{isFavourite ? <i class="fa fa-star"></i> : <i class="fa fa-star" ></i>}</button>
-                <button className="delete-button" onClick={() => handleDelete(id)}><i class="fa fa-trash"></i></button>
+                <button className={starClass} onClick={() => toggleFavourite(id, !isFavourite)}>{isFavourite ? <i className="fa fa-star"></i> : <i className="fa fa-star" ></i>}</button>
+                <button className="delete-button" onClick={() => handleDelete(id)}><i className="fa fa-trash"></i></button>
             </div>
         </li>
     );

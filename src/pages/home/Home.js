@@ -69,7 +69,7 @@ const Home = () => {
                     <div className="main">
                         <h2>FriendList</h2>
                         <div className="filter">
-                            <input value={newFriend} onChange={(e) => setNewFriend(e.target.value)} placeholder="Add New Friend" type="text" name="friendName" onKeyDown={addFriend} autoComplete="off"/>
+                            <input value={newFriend} id="test-add-input" onChange={(e) => setNewFriend(e.target.value)} placeholder="Add New Friend" type="text" name="friendName" onKeyDown={addFriend} autoComplete="off"/>
                             <select name="filter" onChange={(e) => setFilter(e.target.value)} value={filter}>
                                 <option value={FILTER.All}>{FILTER.All}</option>
                                 <option value={FILTER.Favourite}>{FILTER.Favourite}</option>

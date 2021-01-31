@@ -110,7 +110,7 @@ const FriendList = (props) => {
                     <input placeholder="Search" type="search" name="search" value={searchText} onChange={(e) => setSearchText(e.target.value)} onKeyDown={searchFriend} />
                     <ul className="friend-list">
                         {friendList.slice(startIndex, startIndex + ROW_PER_PAGE).map((friend) => (
-                            <FriendItem {...friend} toggleFavourite={toggleFavourite} handleDelete={handleDelete} />
+                            <FriendItem key={friend.id} {...friend} toggleFavourite={toggleFavourite} handleDelete={handleDelete} />
                         ))}
                     </ul>
                     <Pagination pageCount={Math.ceil(friendList.length / ROW_PER_PAGE)} handlePageClick={handlePageClick} />
