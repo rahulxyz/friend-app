@@ -11,7 +11,7 @@ const FriendItem = (props) => {
             </div>
             <div className="friend-item-button">
                 <button className={starClass} onClick={() => toggleFavourite(id, !isFavourite)}>{isFavourite ? <i class="fa fa-star"></i> : <i class="fa fa-star" ></i>}</button>
-                <button onClick={() => handleDelete(id)}><i class="fa fa-trash"></i></button>
+                <button className="delete-button" onClick={() => handleDelete(id)}><i class="fa fa-trash"></i></button>
             </div>
         </li>
     );
