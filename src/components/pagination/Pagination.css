@@ -1,0 +1,21 @@
+.page-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 1.2rem;
+}
+
+.page-list li {
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.page-list li:hover {
+    background-color: var(--dark-gray-blue);
+    color: white;
+}
+
+.current-page {
+    background-color: black;
+    color: white;
+}

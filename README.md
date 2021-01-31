@@ -1,2 +1,1 @@
-# friend-app
-CRUD Operations
+# Friend App

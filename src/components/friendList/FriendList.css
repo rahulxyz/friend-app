@@ -1,0 +1,25 @@
+.list-content {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.list-content input{
+    border: none;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    outline: none;
+
+    width: 100%;
+    border-bottom: 1px solid var(--dark-gray-blue);
+}
+
+.friend-list {
+    margin-top: 16px;
+}
+
+.friend-list li {
+    border-bottom: 1px solid var(--light-gray-blue);
+    padding: 16px;
+}
